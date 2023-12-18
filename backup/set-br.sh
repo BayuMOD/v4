@@ -119,9 +119,9 @@ EOF
 chown -R www-data:www-data /etc/msmtprc
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Downloading files... "
-wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/BayuMOD/v4/ipuk/backup/backup.sh" && chmod +x /usr/bin/backup
-wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/BayuMOD/v4/ipuk/backup/restore.sh" && chmod +x /usr/bin/restore
-wget -q -O /usr/bin/cleaner "https://raw.githubusercontent.com/BayuMOD/v4/ipuk/backup/logcleaner.sh" && chmod +x /usr/bin/cleaner
+wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/BayuMOD/v4/main/backup/backup.sh" && chmod +x /usr/bin/backup
+wget -q -O /usr/bin/restore "https://raw.githubusercontent.com/BayuMOD/v4/main/backup/restore.sh" && chmod +x /usr/bin/restore
+wget -q -O /usr/bin/cleaner "https://raw.githubusercontent.com/BayuMOD/v4/main/backup/logcleaner.sh" && chmod +x /usr/bin/cleaner
 
 if [ ! -f "/etc/cron.d/cleaner" ]; then
 cat> /etc/cron.d/cleaner << END
