@@ -2,7 +2,7 @@
 # auto kill multi login tiap 5 detik
 
 cd /usr/bin
-wget -O tendang "https://raw.githubusercontent.com/BayuMOD/v4/ipuk/tendang.sh"
+wget -O tendang "https://raw.githubusercontent.com/BayuMOD/v4/main/tendang.sh"
 chmod +x tendang
 
 cd
