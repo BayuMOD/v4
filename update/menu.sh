@@ -33,7 +33,7 @@ clear
 ISP=$(curl -s ipinfo.io/org?token=7578ac19afd785 | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city?token=7578ac19afd785 )
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/dragon-andy/permission/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/BayuMOD/permission/main/ip | grep $MYIP | awk '{print $2}')
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
