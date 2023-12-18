@@ -1,7 +1,7 @@
 #!/bin/bash
 # =========================================
-BOT="https://raw.githubusercontent.com/BayuMOD/v4/ipuk/"
-UPDATE="https://raw.githubusercontent.com/BayuMOD/v4/ipuk/update/update.sh"
+BOT="https://raw.githubusercontent.com/BayuMOD/v4/main/"
+UPDATE="https://raw.githubusercontent.com/BayuMOD/v4/main/update/update.sh"
 UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 GREEN='\033[0;32m'
 RED='\033[0;31m'
