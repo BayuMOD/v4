@@ -8,7 +8,7 @@ RED='\033[0;31m'
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/BayuMOD/permission/main/ip"
+data_ip="https://raw.githubusercontent.com/BayuMOD/izin/main/ip"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -33,11 +33,11 @@ clear
 ISP=$(curl -s ipinfo.io/org?token=7578ac19afd785 | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city?token=7578ac19afd785 )
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/BayuMOD/permission/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/BayuMOD/izin/main/ip | grep $MYIP | awk '{print $2}')
 if [ "$res" = "Expired" ]; then
 Exp="\e[36mExpired\033[0m"
 else
-Exp=$(curl -sS https://raw.githubusercontent.com/BayuMOD/permission/main/ip | grep $MYIP | awk '{print $3}')
+Exp=$(curl -sS https://raw.githubusercontent.com/BayuMOD/izin/main/ip | grep $MYIP | awk '{print $3}')
 fi
 
 # =========================================
